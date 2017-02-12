@@ -10,14 +10,6 @@ Builds JVM Runtime library (rt.jar) from source
 
 #### File Structure
 ```
-|-root
-|    |-build.xml
-|    |-build
-|          |-classes
-|          |-dist
-|          |-src
-└──────────────────
-
 root
 │   build.xml  
 │
