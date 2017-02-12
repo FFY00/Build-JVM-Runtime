@@ -1,5 +1,5 @@
 # BuildRT [![Follow](https://img.shields.io/twitter/follow/MyClaraOswin.svg)](http://twitter.com/intent/user?screen_name=MyClaraOswin)
-Builds JVM Runtime library (rt.jar) from source
+Builds the JVM Runtime library (rt.jar) from source
 
 ### How?
  - Unzip src.zip to build/src folder
@@ -19,7 +19,7 @@ root
     |   └───...
     |
     └───dist
-    |   └───...
+    |   └───rt_cistom.jar
     |
     └───src
         └───...
