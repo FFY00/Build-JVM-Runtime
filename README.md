@@ -9,7 +9,7 @@ Builds JVM Runtime library (rt.jar) from source
  - The compiled jar will be located on build/dist/rt_custom.jar
 
 #### File Structure
-'''
+```
 |-root
 |    |-build.xml
 |    |-build
@@ -31,7 +31,7 @@ root
     |
     └───src
         └───...
-'''
+```
 
 ### Contributors
  - [**FFY00**](http://twitter.com/intent/user?screen_name=MyClaraOswin) - Maintainer
