@@ -9,13 +9,29 @@ Builds JVM Runtime library (rt.jar) from source
  - The compiled jar will be located on build/dist/rt_custom.jar
 
 #### File Structure
+'''
 |-root
 |    |-build.xml
 |    |-build
 |          |-classes
 |          |-dist
 |          |-src
-|____________________
+└──────────────────
+
+root
+│   build.xml  
+│
+└───folder1
+    |
+    └───classes
+    |   └───...
+    |
+    └───dist
+    |   └───...
+    |
+    └───src
+        └───...
+'''
 
 ### Contributors
  - [**FFY00**](http://twitter.com/intent/user?screen_name=MyClaraOswin) - Maintainer
