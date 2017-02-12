@@ -13,7 +13,7 @@ Builds the JVM Runtime library (rt.jar) from source
 root
 │   build.xml  
 │
-└───folder1
+└───build
     |
     └───classes
     |   └───...
