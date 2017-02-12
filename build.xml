@@ -1,0 +1,33 @@
+<project name="create rt_custom.jar" default="makejar" basedir=".">
+    <target name="init">
+        <property environment="env"/>
+        <property name="project.build" location="build"/>
+        <property name="project.src" location="${project.build}/src"/>
+        <property name="project.classes" location="${project.build}/classes"/>
+        <property name="project.dist" location="${project.build}/dist"/>
+        <path id="project.classpath">
+            <fileset dir="${env.JAVA_HOME}/jre/lib">
+                <include name="*.jar"/>
+            </fileset>
+        </path>
+    </target>
+
+    <target name="build" depends="init">
+        <mkdir dir="${project.classes}"/>
+        <javac srcdir="${project.src}" classpathref="project.classpath"
+            destdir="${project.classes}" debug="on" includeAntRuntime="false"
+            fork="true" memoryMaximumSize="4096m" failonerror="false">
+        </javac>
+    </target>
+
+    <target name="makejar" depends="build">
+        <mkdir dir="${project.dist}"/>
+        <copy file="${env.JAVA_HOME}/jre/lib/rt.jar" tofile="${project.dist}/rt_custom.jar"/>
+        <jar jarfile="${project.dist}/rt_custom.jar" update="true" compress="true">
+            <fileset dir="${project.classes}"/>
+        </jar>
+        <echo>
+            Custom runtime library built. You can find it at ${project.dist}/rt_custom.jar.
+        </echo>
+    </target>
+</project>
