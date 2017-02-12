@@ -19,7 +19,7 @@ root
     |   └───...
     |
     └───dist
-    |   └───rt_cistom.jar
+    |   |   rt_custom.jar
     |
     └───src
         └───...
