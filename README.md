@@ -26,4 +26,4 @@ root
 ```
 
 ### Contributors
- - [**FFY00**](http://twitter.com/intent/user?screen_name=MyClaraOswin) - Maintainer
+ - [**FFY00**](http://twitter.com/intent/user?screen_name=MissingClara) - Maintainer
