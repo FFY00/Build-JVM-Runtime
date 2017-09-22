@@ -2,11 +2,18 @@
 Builds the JVM Runtime library (rt.jar) from source
 
 ### How?
- - Unzip src.zip to build/src folder
+ - Unzip ```src.zip``` to ```build/src``` folder
  - Edit the source if needed
  - Run ant in the root folder
- - The compiled classes will be located on build/classes
- - The compiled jar will be located on build/dist/rt_custom.jar
+ 
+ - The compiled classes will be located on ```build/classes```
+ - The compiled jar will be located on ```build/dist/rt_custom.jar```
+ - This can be used to compile other sources
+ 
+### Example
+```git clone https://github.com/FFY00/Build-JVM-Runtime```
+Paste the source in the ```src``` folder and edit
+```ant```
 
 #### File Structure
 ```
